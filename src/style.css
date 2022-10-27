@@ -1,0 +1,91 @@
+#form-window {
+  background-color: #0099cc;
+  padding-bottom: 30px;
+  font-family: Spartan;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#title {
+  padding: 10px;
+  margin: 0px 30px 0px 30px;
+}
+
+#background {
+  padding: 15px;
+  margin: 30px 30px 15px 30px;
+  border-radius: 5px;
+  background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/14F77/production/_110397858_gettyimages-182059956.jpg);
+  filter: grayscale(100%) contrast(70%);
+}
+
+#header {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+#survey-form {
+  padding: 30px;
+  margin: 0px 30px 0px 30px;
+  background-color: #66d9ff;
+  border-radius: 5px;
+}
+
+.input-data {
+  padding: 5px;
+}
+
+.control {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  font-family: Spartan;
+  font-size: 90%;
+  margin-top: 5px;
+  height: 25px;
+}
+
+#dropdown {
+  height: 30px;
+  width: 101%;
+}
+
+.radio-control,
+.check-control {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.textarea {
+  display: block;
+  width: 98%;
+  border-radius: 5px;
+  font-family: Spartan;
+  font-size: 90%;
+  margin-top: 5px;
+  padding: 5px;
+  height: 100px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  background-color: #0099cc;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Spartan;
+  font-size: 90%;
+  border-radius: 5px;
+  height: 25px;
+}
+
+span {
+  padding: 0 55px;
+  padding-top: 20px;
+  font-family: Spartan;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <title>Course feedback survey form</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+
+<div id="form-window">
+  
+  <header id="header">
+    <div id=background>
+    <h1 id="title">Course Feedback</h1>
+    <p id="description"><strong>Please help to improve the quality of instruction by providing the following information:</strong></p>
+  </div>
+  </header>
+
+
+<form id="survey-form">
+  <div class="input-data">
+    <label for="name" id="name-label">Name:</label>
+      <input
+             id="name"
+             type="text"
+             placeholder="Please enter your name"
+             class="control"
+             required>
+  </div>
+  
+  <div class="input-data">
+    <label for="email" id="email-label">Email:</label>
+      <input
+             id="email"
+             type="email"
+             placeholder="Please enter your email"
+             class="control"
+             required>
+  </div>
+  
+  <div class="input-data">
+    <label for="number" id="number-label">Number of ECTS this semester:</label>
+      <input
+             id="number"
+             type="number"
+             min="1"
+             max="30"
+             placeholder="Please enter number of ECTS"
+             class="control"
+             required>
+  </div>
+  
+  <div class="input-data">
+    <label for="dropdown">Status this semester:</label>
+      <select
+              id="dropdown"
+              class="control"
+              required>
+        <option disable selected value>Select status</option>
+        <option value="fulltime">Full-time student</option>
+        <option value="parttime">Part-time student</option>
+        <option value="guest">Guest student</option>
+        <option value="auditor">Auditor/Non-credit</option>
+    </select>
+  </div>
+
+  <div class="input-data">
+    <label for="course">Course taken:</label>
+      <input
+             id="course"
+             type="text"
+             placeholder="Please enter the name of the course"
+             class="control"
+             required>
+  </div>
+  
+  <div class="input-data">
+    <label for="req-course">Required course:</label><br>
+      <input
+             id="req-course"
+             name="required"
+             value="yes"
+             type="radio"
+             class="radio-control">
+      <label for="yes">Yes</label><br>
+  
+      <input
+             name="required"
+             value="no"
+             type="radio"
+             class="radio-control">
+      <label for="no">No</label>
+  
+  </div>
+  
+  <div class="input-data">
+    <label for="instructor">Instructor:</label>
+      <input
+             id="instructor"
+             type="text"
+             placeholder="Please enter the instructor's name"
+             class="control"
+             required>
+  </div>
+  
+  <div class="input-data">
+    <label for="quality">In the future, the instructor could:</label><br>
+        <input
+             id="quality"
+             type="checkbox"
+             class="check-control"
+             value="avail">
+      <label for="avail">be available for questions more often.</label><br>
+    
+        <input
+             id="quality"
+             type="checkbox"
+             class="check-control"
+             value="expec">
+      <label for="expec">make her/his expectations more clear.</label><br>
+
+      <input
+             id="quality"
+             type="checkbox"
+             class="check-control"
+             value="clarity">
+      <label for="clarity">communicate more clearly in class.</label><br>
+    
+      <input
+             id="quality"
+             type="checkbox"
+             class="check-control"
+             value="nothing">
+      <label for="nothing">do nothing better.</label>
+  </div>
+    
+  <div class="input-data">
+    <label for="textarea">Additional comments:</label>
+      <textarea
+             id="textarea"
+             type="textarea"
+             placeholder="Please provide your comment(s) here"
+             class="textarea"></textarea>
+             
+  </div>
+    
+  <div class="input-data">
+    <button id="submit" class="submit-button" type="submit">Submit</button>
+  </div>
+</form>
+        <footer>
+        <span>&#169; 2021, Sean Leichtle</span>
+      </footer>
+</div>
